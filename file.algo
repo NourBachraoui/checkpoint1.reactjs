@@ -5,11 +5,15 @@ VAR
 BEGIN
     tab= tab1.concat(tab2);
     sum =0; 
-    for (i to tab.length){
-        for (j to tab.length) {
+    for (i=0 to tab.length){
+        for (j=0 to tab.length) {
             if (tab[i]=tab[j]) tab[i]=tab[j]=0;
-            sum= sum+ tab[i]+tab[j];
 
         }
     }
+    for ( k=0 to tab.length) { 
+        sum= sum +tab[k];
+
+    }
+    write(sum);
 END
