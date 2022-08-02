@@ -1,0 +1,15 @@
+ALGORITHM algorithm_sum_different_numbers_in_two_tables
+VAR
+    tab,tab1,tab3:  ARRAY_OF type[INTEGER];; 
+    sum: INTEGER;
+BEGIN
+    tab= tab1.concat(tab2);
+    sum =0; 
+    for (i to tab.length){
+        for (j to tab.length) {
+            if (tab[i]=tab[j]) tab[i]=tab[j]=0;
+            sum= sum+ tab[i]+tab[j];
+
+        }
+    }
+END

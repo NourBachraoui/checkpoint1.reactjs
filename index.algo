@@ -1,0 +1,18 @@
+ALGORITHM algorithm_name
+VAR
+   str:STRING; 
+   nb_char,nb_space, nb_v: INTEGER ; 
+BEGIN
+
+    nb_char=0;
+    nb_space=0;
+    nb_v=0;
+    while (str <>'.')
+    Read(str);
+    nb_char++;
+    if (str=' ')
+    nb_space=++ ;
+    if (toUpperCase(str)in ['O','A','E','U'])
+    nb_v++;
+
+END
